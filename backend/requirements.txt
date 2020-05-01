@@ -1,0 +1,11 @@
+# server
+wheel
+gunicorn
+
+# Web
+flask
+flask-praetorian
+flask-migrate
+flask-sqlalchemy
+flask-cors
+requests
