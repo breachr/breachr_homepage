@@ -1,16 +1,16 @@
 <template>
-<q-layout view="hHh Lpr fff">
+<q-layout view="lHr Lpr fff">
   <div id="homy" v-waypoint="{active: true, callback: onWaypoint}"></div>
 
   <!-- PRELOADER -->
   <!-- <preloader></preloader> -->
 
   <!-- HEADER -->
-  <heador></heador>
+  <drawor></drawor>
 
   <!--  PAGES -->
-  <q-page-container>
-    <transition appear enter-active-class="animated fadeInLeft" leave-active-class="animated fadeOutRight" mode="out-in" duration="900">
+  <q-page-container class="containr">
+    <transition appear enter-active-class="animated slow fadeInTop" leave-active-class="animated slow fadeOutBottom" mode="out-in">
       <router-view />
     </transition>
   </q-page-container>
@@ -28,14 +28,14 @@
 
 <script>
 // import preloader from './preloader/preloader'
-import heador from './header/header'
+import drawor from './drawer/drawer'
 // drawer is inside header!
 import footor from './footer/footer'
 
 export default {
   components: {
     // preloader,
-    heador,
+    drawor,
     footor
   },
   methods: {
@@ -68,6 +68,8 @@ export default {
   max-width: 1920px
   margin-left: auto
   margin-right: auto
+.containr
+  // margin-left: 20
 
 // /* BACK TO TOP -------------------------------------------*/
 .goHomeBtn

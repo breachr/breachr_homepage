@@ -8,16 +8,7 @@ const routes = [{
 },
 
 {
-  path: '/banane/',
-  component: () => import('layouts/layout'),
-  children: [{
-    path: '',
-    component: () => import('pages/page1/page1')
-  }]
-},
-
-{
-  path: '/PAGE2/',
+  path: '/about/',
   component: () => import('layouts/layout'),
   children: [{
     path: '',
@@ -26,7 +17,16 @@ const routes = [{
 },
 
 {
-  path: '/PAGE3/',
+  path: '/work/',
+  component: () => import('layouts/layout'),
+  children: [{
+    path: '',
+    component: () => import('pages/page3/page3')
+  }]
+},
+
+{
+  path: '/contact/',
   component: () => import('layouts/layout'),
   children: [{
     path: '',

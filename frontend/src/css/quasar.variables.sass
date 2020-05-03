@@ -8,9 +8,9 @@
 // It's highly recommended to change the default colors
 // to match your app's branding.
 
-$primary   : #3C4858
-$secondary : #99cc33
-$tertiary  : #FFCA2D
+$primary   : #2A3439
+$secondary : #0D8048
+$tertiary  : black
 
 $neutral   : #E0E1E2
 $positive  : #21BA45
@@ -20,6 +20,8 @@ $warning   : #F2C037
 
 html
   background-color: $primary
+body
+  background-color: $primary
 // positions -----------------------------------------------
 .mycenter // requires set width !
   position: relative
@@ -27,15 +29,17 @@ html
   margin-right: auto
 
 // Animations ----------------------------------------------
+@import '~/statics/css/vivify.min.css'
+
 .fade-enter // Fading
   // this will be active only for one second
   opacity: 0
 .fade-enter-active
-  transition: opacity 1s
+  transition: opacity 3s
 .fade-leave
   // opacity: 1; not neccessary its the default anyway
 .fade-leave-active
-  transition: opacity 1s
+  transition: opacity 3s
   opacity: 0; // needed because its not default
 
 .hoverizer // Hoverizer
